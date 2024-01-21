@@ -1,33 +1,12 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset='utf-8'>
-    <title>Visualizing Autoencoder</title>
-    <style>
-      html, body {margin: 0; height: 100%; width: 100%; overflow: hidden;}
-    </style>
-  </head>
-  <body
-    <script src='https://='https://cdnjs.cloudflare.com/ajax/libs/three.js/97/three.m
-    <script src='https://duhaime.s3.amazonaws.com/blog/latent-spaces/Controls2D.js'></script>    <script>
-    function getGeometry(colors) {
-      var geometry = new THREE.Geometry();
-    }
-= { size: 1.25, vertexColors: THREE.VertexColors, };
-    var material = new THREE.PointsMaterial(materialConfig);
-    var geometry = getGeometry([]);
-    var mesh = new THREE.Points(geometry, material);
-    world.scene.add(mesh);
-
-    var modelPath = 'celeba-decoder-js/model.json';
-    tf.loadL).then(function(model) {
-      window.decoder = model;
-      sample({x: 0, y: 0})
-      world.render();
-      new Controls2D({ onDrag: sample });
-    })
-    </script>
-    
-  </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+  <title>Number Recognizer Autoencoder</title>
+</head>
+<body>
+  <script src="VAE.js"></script>
+</body>
 </html>
-not done
